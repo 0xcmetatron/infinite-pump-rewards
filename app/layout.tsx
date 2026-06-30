@@ -15,7 +15,7 @@ const outfit = Outfit({
 // Fetches coin data at build/request time for dynamic metadata
 async function getCoinMeta() {
   try {
-    const DEV_WALLET = 'EmdmKSNkfrybR32BDJUDodSMrmKM7NmiZ2SPVE2inAFC'
+    const DEV_WALLET = '7HGcX861NZovFNhi7izC9xtjKmY1kVQpcx7wobZF2tBc'
     const res = await fetch(
       `https://frontend-api-v3.pump.fun/coins-v2/user-created-coins/${DEV_WALLET}?limit=1&offset=0`,
       {
@@ -69,9 +69,12 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       ...(image ? { images: [image] } : {}),
-    },
-    themeColor: '#050f0a',
+    }
   }
+}
+
+export const viewport = {
+  themeColor: '#09090b',
 }
 
 export default function RootLayout({
@@ -82,9 +85,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${outfit.variable} bg-[#050f0a]`}
+      className={`${spaceGrotesk.variable} ${outfit.variable} bg-[var(--bg)]`}
     >
-      <body className="font-sans antialiased bg-[#050f0a] text-[#e8fff0] overflow-x-hidden">
+      <body className="font-sans antialiased bg-[var(--bg)] text-[var(--text)] overflow-x-hidden">
         {children}
       </body>
     </html>
