@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const DEV_WALLET = '7HGcX861NZovFNhi7izC9xtjKmY1kVQpcx7wobZF2tBc'
+const DEV_WALLET = 'EcfN9bD43fKzrnWmJ2VAwFzrtNWmNWjUBmbJ73ATNFb'
 const HELIUS_API_KEY = 'b51f4952-3381-42e9-978d-cd4d23d738ac'
 
 export async function GET() {
