@@ -357,7 +357,7 @@ export default function LiveTransfers() {
         {/* Dev wallet link */}
         <div className="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
-            href="https://solscan.io/account/EcfN9bD43fKzrnWmJ2VAwFzrtNWmNWjUBmbJ73ATNFb"
+            href="https://solscan.io/account/89Q5pDRK7uJCqvt9NHigRda3QcUjDtaUZsQBSS2pt8A1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white font-black uppercase tracking-widest bg-[var(--bg2)] border-2 border-white px-8 py-4 shadow-[4px_4px_0_0_white] hover:shadow-[6px_6px_0_0_var(--green)] hover:border-[var(--green)] hover:text-[var(--green)] hover:-translate-y-1 transition-all"
